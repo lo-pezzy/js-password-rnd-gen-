@@ -5,7 +5,7 @@ function generatePassword() {
   var upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWYZ";
   var symbols = "!@#$%^&*";
   var numbers = "0123456789";
-
+// introducing all possible characters & symbols ^
   var passwordArr = "";
   var passwordLength = prompt("How long do you want your password?");
   console.log(passwordLength);
@@ -15,6 +15,7 @@ function generatePassword() {
     var confirmUpper = confirm("Do you want uppercase letters?");
     var confirmSymbol = confirm("Do you want symbols?");
     var confirmNumber = confirm("Do you want numbers?");
+    // Establishing prompts to be answered
     console.log(confirmLower, confirmUpper, confirmSymbol, confirmNumber);
     if (confirmLower) {
       passwordArr += lowerLetters;
@@ -30,6 +31,8 @@ function generatePassword() {
     }
     console.log(passwordArr)
     var finalPassword = ""
+    
+      
     
 
 
