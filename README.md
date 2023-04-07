@@ -27,3 +27,6 @@ I then connected them to an Array to be pulled from.
 I then added prompt truthy and falsey prompt messages that said if the password length was valid or invalid and asked which characters they would like to add or remove.
 After i added a for loop to randomly generate those characters pulled from the pool and return with the final generated password.
 
+## Website URL
+"https://lo-pezzy.github.io/js-password-rnd-gen-/Develop/index.html"
+
