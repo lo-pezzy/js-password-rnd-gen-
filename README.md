@@ -22,3 +22,8 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 ## Steps I Took to Met this
+First i added variables to contain all possible characters and letters that could be generated.
+I then connected them to an Array to be pulled from.
+I then added prompt truthy and falsey prompt messages that said if the password length was valid or invalid and asked which characters they would like to add or remove.
+After i added a for loop to randomly generate those characters pulled from the pool and return with the final generated password.
+

@@ -35,8 +35,7 @@ function generatePassword() {
 
     for (var i = 0; i < passwordLength; i++) {
       var random = Math.floor(Math.random() * passwordArr.length);
-      console.log(random);
-      console.log(passwordArray);
+
       finalPassword.push(passwordArr[random]);
     }
     finalPassword = finalPassword.join("");
