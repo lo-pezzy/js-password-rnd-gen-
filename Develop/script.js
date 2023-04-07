@@ -3,11 +3,13 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
   var lowerLetters = "abcdefghijklmnopqrstuvwxyz";
   var upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWYZ";
-  var symbols = "!@#$%^&*";
+  var symbols = " !#$%&'()*+,-./:;<=>?@[]^_`{|}~";
   var numbers = "0123456789";
-// introducing all possible characters & symbols ^
+  // introducing all possible characters & symbols ^
   var passwordArr = "";
-  var passwordLength = prompt("How long do you want your password?");
+  var passwordArray = [];
+  var finalPassword = [];
+  var passwordLength = parseInt(prompt("How long do you want your password?"));
   console.log(passwordLength);
   if (passwordLength > 8 && passwordLength < 128) {
     console.log("password is valid");
@@ -29,13 +31,15 @@ function generatePassword() {
     if (confirmNumber) {
       passwordArr += numbers;
     }
-    console.log(passwordArr)
-    var finalPassword = ""
-    
-      
-    
+    console.log(passwordArr);
 
-
+    for (var i = 0; i < passwordLength; i++) {
+      var random = Math.floor(Math.random() * passwordArr.length);
+      console.log(random);
+      console.log(passwordArray);
+      finalPassword.push(passwordArr[random]);
+    }
+    finalPassword = finalPassword.join("");
     return finalPassword;
   } else {
     alert("password is not valid");
